@@ -16,6 +16,8 @@ public class AppDriver {
             programDriver.addClass("treeskind", Treeskind.class,"A map/reduce program that calculates the number of trees of each kinds");
             programDriver.addClass("maxheightkind", Maxheightkind.class,"A map/reduce program that  calculates the height of the tallest tree of each kind.");
             programDriver.addClass("sortTrees", SortTrees.class,"A map/reduce program that sort the trees height from smallest to largest.");
+            programDriver.addClass("oldestTreeDistrict", OldestTreeDistrict.class,"A map/reduce program that returns the district(s) with the oldest tree(s) in the Remarkable Trees of Paris dataset, using a sort.");
+            programDriver.addClass("districtmaxtrees", DistrictMaxTrees.class,"A map/reduce program that returns the district(s) with the most trees in the Remarkable Trees of Paris dataset, checking through all the data, using the Reducer's cleanup.");
 
             exitCode = programDriver.run(argv);
         } catch (Throwable throwable) {

@@ -29,7 +29,6 @@ public class TokenizerMapperTest {
     public void testMap() throws IOException, InterruptedException {
         String value = "foo bar tux";
         this.tokenizerMapper.map(null, new Text(value), this.context);
-        verify(this.context, times(3))
-                .write(new Text("tux"), new IntWritable(1));
+        verify(this.context, times(3)).write(new Text("tux"), new IntWritable(1));
     }
 }
